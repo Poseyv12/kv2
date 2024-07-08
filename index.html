@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KV Mobile Bartending</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to KV Mobile Bartending</h1>
+        <p>Crafting Memorable Moments, One Drink at a Time</p>
+    </header>
+    <section class="hero">
+        <img src="photos/hero.png" alt="Mobile Bar Setup">
+        <div class="hero-content">
+            <h2>Elevate Your Event with Professional Bartending</h2>
+            <p>Bringing the bar experience to you, wherever you are.</p>
+            <button class="cta-button">Book Your Event Now</button>
+        </div>
+    </section>
+    <section class="introduction">
+        <h2>At KV Mobile Bartending, we believe that every event deserves a touch of magic.</h2>
+        <p>Our mobile bartending service is designed to bring the bar experience to you, wherever you are. Whether it's a wedding, corporate event, private party, or any special occasion, we're here to make it unforgettable.</p>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <div class="service-card">
+                    <img src="photos/wedding.png" alt="Wedding Service">
+                    <div class="service-card-content">
+                        <strong>Weddings:</strong> Elegant bar setups and signature cocktails for your special day.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="service-card">
+                    <img src="photos/party.png" alt="Private Parties Service">
+                    <div class="service-card-content">
+                        <strong>Private Parties:</strong> Fun and creative drinks to make your celebration unforgettable.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="service-card">
+                    <img src="photos/corp.png" alt="Corporate Events Service">
+                    <div class="service-card-content">
+                        <strong>Corporate Events:</strong> Professional and efficient service for your business gatherings.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="service-card">
+                    <img src="photos/drinks.png" alt="Custom Cocktails Service">
+                    <div class="service-card-content">
+                        <strong>Custom Cocktails:</strong> Personalized drinks created just for your event.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>
+                <div class="why-choose-card">
+                    <img src="photos/pro.png" alt="Professionalism">
+                    <div class="why-choose-content">
+                        <strong>Professionalism:</strong> Our bartenders are TABC certified and trained to provide top-notch service.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="why-choose-card">
+                    <img src="photos/ingred.png" alt="Quality">
+                    <div class="why-choose-content">
+                        <strong>Quality:</strong> We use only the finest ingredients to craft our cocktails.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="why-choose-card">
+                    <img src="photos/flex.png" alt="Flexibility">
+                    <div class="why-choose-content">
+                        <strong>Flexibility:</strong> We tailor our services to fit the unique needs of your event.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="why-choose-card">
+                    <img src="photos/10.png" alt="Experience">
+                    <div class="why-choose-content">
+                        <strong>Experience:</strong> With years of experience in the industry, we know how to make your event special.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="testimonials">
+        <h2>Client Testimonials</h2>
+        <blockquote>
+            "Absolutely amazing service! Our wedding guests couldn't stop raving about the cocktails." - Sarah & John
+        </blockquote>
+        <blockquote>
+            "The best bartending service we've ever had. Professional, friendly, and the drinks were incredible." - Amanda P.
+        </blockquote>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Work</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="photos/hero.png" alt="Event 1" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/outside.png" alt="Event 2" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/outside2.png" alt="Event 3" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/service.png" alt="Event 4" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/wedding.png" alt="Event 5" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/drinks.png" alt="Event 6" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/drink.png" alt="Event 5" onclick="openModal(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/setup1.png" alt="Event 6" onclick="openModal(this.src)">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <section class="contact">
+        <h2>Ready to elevate your event?</h2>
+        <p>Contact us today to book your mobile bartending service and let us craft memorable moments for you and your guests.</p>
+        <p>Phone: <a href="tel:281-755-6499">281-755-6499</a></p>
+        <p>Email: <a href="mailto:kvmobilebartending@gmail.com">kvmobilebartending@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 KV Mobile Bartending | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
