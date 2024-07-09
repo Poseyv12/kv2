@@ -206,6 +206,59 @@
     text-align: center;
   }
 
+/* Custom Cocktails Section */
+.custom-cocktails {
+  background-color: var(--secondary-color);
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.custom-cocktails h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.cocktail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+}
+
+.cocktail-item {
+  background-color: var(--light-text-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cocktail-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.cocktail-content {
+  padding: 1em;
+}
+
+.cocktail-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.cocktail-content p {
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+
   /* Gallery Section */
 .gallery {
   background-color: var(--secondary-color);
