@@ -377,8 +377,13 @@
 
   /* Recipes Section */
 .recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 4em 2em;
   background-color: var(--secondary-color);
+  text-align: center;
 }
 
 .recipes h2 {
@@ -388,6 +393,7 @@
 }
 
 .recipe-item {
+  max-width: 500px;
   background-color: var(--light-text-color);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -416,8 +422,7 @@
 }
 
 .recipe-item p {
-  margin: 1em 0;
-}
+  margin: 1em 0;}
 /* Navbar Styles */
 .navbar {
   background-color: var(--primary-color);
